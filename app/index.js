@@ -1,10 +1,12 @@
 var express = require('express');
 var app = express();
+var motivations = require('motivations');
 
 app.get('/',function(request,response){
 	
-	response.send("hiiiiii bangalore");
+	response.send(motivations[6]);
 
 });
 
 module.exports = app;
+
